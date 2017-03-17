@@ -80,7 +80,31 @@ body{
 
 
 
+.logobgc{
+  height: 70px;
+  //background: white;
+  background: red;
 
+  .logobgcin{
+    height: 40px;
+    background: gold;
+    padding: 0;
+
+    .logopic{
+      height: 20px;
+      background: pink;
+    }
+    .logocenter{
+      height: 30px;
+      background: green;
+    }
+
+    .logoright{
+    height: 20px;
+      background: yellow;
+    }
+  }
+}
 
 .bgred{
   background: red;

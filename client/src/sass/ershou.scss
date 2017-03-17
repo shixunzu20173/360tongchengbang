@@ -8,7 +8,73 @@ body{
 }
 
 
+//用户晒单
+.usershow{
 
+   font-size: 20px;
+  height: 60px;
+  line-height:75px;
+  font-family: '微软雅黑';
+
+  .usershowcenter{
+    text-align: center;
+  }
+
+}
+//用户晒单下
+.downusershow{
+  height:334px;
+  background: pink;
+  .downusershow001{
+    background: white;
+    height:334px;
+
+    border-right: 8px solid #f5f5f5;
+  }
+
+  .downusershow002{
+    //background: red;
+    background: white;
+    height:334px;
+    border-left: 8px solid #f5f5f5;
+    border-right: 8px solid #f5f5f5;
+
+
+
+    .wishtop{
+      color: #999999;
+      margin-top: 25px;
+      margin-bottom: 34px;
+    }
+    .wish{
+      text-align: center;
+      .wishpic{
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .wishdown001{
+      margin-top: 16px;
+      color: #999999;
+    }
+    .wishdown002{
+      color: #999999;
+    }
+  }
+
+
+  .downusershow003{
+    background: gold;
+    height:334px;
+    border-left: 8px solid #f5f5f5;
+  }
+
+}
 .navtopoutside {
   border-bottom: 1px solid #c2c2c2;
   .navtop {
@@ -81,27 +147,95 @@ body{
 
 
 .logobgc{
-  height: 70px;
-  //background: white;
-  background: red;
+  height: 85px;
+  background: white;
+  //background: red;
+
 
   .logobgcin{
-    height: 40px;
-    background: gold;
+    //height: 40px;
+    //background: green;
     padding: 0;
 
     .logopic{
-      height: 20px;
-      background: pink;
+      padding-right: 30px;
+      //height: 20px;
+      //background: pink;
+      img{
+        width: 100%;
+      }
     }
+    //中间文字
     .logocenter{
-      height: 30px;
-      background: green;
+      height: 85px;
+      //background: green;
+
+      //padding-left: 40px;
+
+      span{
+        display: inline-block;
+        height: 85px;
+
+        line-height: 85px;
+
+        a{
+          color: black;
+          font-size: 18px;
+        }
+      }
+
+      .lc001{
+        margin-left: 60px;
+        margin-right: 40px;
+      }
+      .lc002{
+        margin-right: 40px;
+      }
+   .lc003{
+     margin-right: 40px;
+   }
+
+
     }
 
     .logoright{
-    height: 20px;
-      background: yellow;
+    height: 85px;
+
+      //background: yellow;
+
+.searchbox{
+  position: relative;
+  height: 85px;
+  line-height: 85px;
+
+  background: white;
+
+
+  .search-txt{
+
+    width: 282px;
+    height: 40px;
+  }
+  .search-sub{
+
+display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    right: 0;
+    top: 23px;
+
+
+
+  }
+
+
+
+}
+
+
+
     }
   }
 }
@@ -114,10 +248,7 @@ body{
 }
 
 
-.logo{
-  height: 74px;
-  background: white;
-}
+
 
 
 .banner{
@@ -369,12 +500,16 @@ body{
 
 
 
-
+.pad0{
+  padding: 0;
+}
 //横排五个
 .br10{
-  border-right: 10px solid grey;
+  border-right: 5px solid grey;
 
-  /*margin-right: 10px;*/
+}
+.bl5{
+  border-left: 5px solid grey;
 
 }
 

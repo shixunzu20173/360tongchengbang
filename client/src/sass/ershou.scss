@@ -8,6 +8,8 @@ body{
 }
 
 
+
+
 //用户晒单
 .usershow{
 
@@ -21,60 +23,10 @@ body{
   }
 
 }
-//用户晒单下
-.downusershow{
-  height:334px;
-  background: pink;
-  .downusershow001{
-    background: white;
-    height:334px;
-
-    border-right: 8px solid #f5f5f5;
-  }
-
-  .downusershow002{
-    //background: red;
-    background: white;
-    height:334px;
-    border-left: 8px solid #f5f5f5;
-    border-right: 8px solid #f5f5f5;
 
 
 
-    .wishtop{
-      color: #999999;
-      margin-top: 25px;
-      margin-bottom: 34px;
-    }
-    .wish{
-      text-align: center;
-      .wishpic{
-        width: 180px;
-        height: 180px;
-        margin: 0 auto;
-        img{
-          width: 100%;
-        }
-      }
-    }
 
-    .wishdown001{
-      margin-top: 16px;
-      color: #999999;
-    }
-    .wishdown002{
-      color: #999999;
-    }
-  }
-
-
-  .downusershow003{
-    background: gold;
-    height:334px;
-    border-left: 8px solid #f5f5f5;
-  }
-
-}
 .navtopoutside {
   border-bottom: 1px solid #c2c2c2;
   .navtop {
@@ -143,8 +95,6 @@ body{
 
   }
 }
-
-
 
 .logobgc{
   height: 85px;
@@ -247,14 +197,201 @@ display: inline-block;
   background: green;
 }
 
-
-
-
-
 .banner{
   height:242px;
   background:blue;
   padding: 0;
+position: relative;
+
+  .bannerrgba{
+    width: 300px;
+    height: 242px;
+    background: black;
+    opacity: 0.7;
+
+    position: absolute;
+
+    top: 0;
+    left: 125px;
+
+    z-index: 999;
+
+    padding:10px 0 0 20px;
+
+    .hot{
+      color: white;
+      .hottit{
+        border-left: 4px solid white;
+        padding-left: 4px;
+        a{
+          color: #ffffff;
+        }
+
+        font-size: 16px;
+      }
+      .hotrow001{
+        margin-top: 6px;
+        span{
+          display: inline-block;
+          margin: 0 6px;
+          margin-left: 1px;
+
+
+          text-align: center;
+
+          a{
+            color: #ffffff;
+          }
+        }
+
+      }
+      .hotrow002{
+
+        span{
+          display: inline-block;
+          margin: 0 6px;
+          margin-left: 1px;
+
+
+          text-align: center;
+
+          a{
+            color: #ffffff;
+          }
+        }
+
+        span:nth-child(1){
+          margin-left: 2px;
+        }
+
+      }
+    }
+
+    .sees{
+      margin-top: 12px;
+      color: white;
+      .seestit{
+        border-left: 4px solid white;
+        padding-left: 4px;
+        a{
+          color: #ffffff;
+        }
+
+        font-size: 16px;
+      }
+      .seesrow001{
+        margin-top: 6px;
+        span{
+          display: inline-block;
+          margin: 0 6px;
+          margin-left: 1px;
+
+
+          text-align: center;
+
+          a{
+            color: #ffffff;
+          }
+        }
+
+      }
+      .seesrow002{
+
+        span{
+          display: inline-block;
+          margin: 0 6px;
+          margin-left: 1px;
+
+
+          text-align: center;
+
+          a{
+            color: #ffffff;
+          }
+        }
+
+        span:nth-child(1){
+          margin-left: 2px;
+        }
+
+      }
+    }
+
+    .try{
+      margin-top: 12px;
+      color: white;
+      .trytit{
+        border-left: 4px solid white;
+        padding-left: 4px;
+        a{
+          color: #ffffff;
+        }
+
+        font-size: 16px;
+      }
+      .tryrow001{
+        margin-top: 6px;
+        span{
+          display: inline-block;
+          margin: 0 6px;
+          margin-left: 1px;
+
+
+          text-align: center;
+
+          a{
+            color: #ffffff;
+          }
+        }
+
+      }
+      .tryrow002{
+
+        span{
+          display: inline-block;
+          margin: 0 6px;
+          margin-left: 1px;
+
+
+          text-align: center;
+
+          a{
+            color: #ffffff;
+          }
+        }
+
+        span:nth-child(1){
+          margin-left: 2px;
+        }
+
+      }
+    }
+
+
+
+
+
+
+
+
+  }
+
+  .bannerright{
+    position: absolute;
+
+    top: 12px;
+    right: 110px;
+    z-index: 999;
+
+    width: 160px;
+    height: 220px;
+    img{
+      width: 100%;
+    }
+
+  }
+
+
 
 }
 
@@ -491,15 +628,6 @@ display: inline-block;
   }
 }
 
-
-
-
-
-
-
-
-
-
 .pad0{
   padding: 0;
 }
@@ -571,15 +699,6 @@ display: inline-block;
 
 
 
-
-
-
-
-
-
-
-
-
 .partners{
    padding:0;
 
@@ -618,13 +737,6 @@ display: inline-block;
 
   }
 }
-
-
-
-
-
-
-
 
 
 .zuixin{
@@ -706,6 +818,226 @@ display: inline-block;
 
 
 
+//用户晒单下
+.downusershow{
+
+  height:334px;
+  //background: pink;
+
+  //用户晒单
+  .downusershow001{
+    background: white;
+    height: 334px;
+    //padding: 0;
+    .outline{
+      height: 111px;
+      border-bottom: 1px dashed black;
+
+      .s1{
+        height: 50px;
+        //background: red;
+        padding: 0;
+        .s1pic{
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+
+          padding-top: 20px;
+          img{
+            width: 100%;
+          }
+        }
+
+      }
+      .s2{
+        height: 60px;
+        //background: pink;
+margin-top: 20px;
+        padding: 0;
+        margin-left: -20px;
+        .s2write{
+
+        }
+      }
+    }
+
+
+
+  }
+
+//发布愿望
+
+  .downusershow002{
+    //background: red;
+    background: white;
+    height:334px;
+    border-left: 8px solid #f5f5f5;
+    border-right: 8px solid #f5f5f5;
+
+
+
+    .wishtop{
+      color: #999999;
+      margin-top: 25px;
+      margin-bottom: 34px;
+    }
+    .wish{
+      text-align: center;
+      .wishpic{
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .wishdown001{
+      margin-top: 16px;
+      color: #999999;
+    }
+    .wishdown002{
+      color: #999999;
+    }
+  }
+
+//关注我们
+  .downusershow003{
+    background: white;
+    height:334px;
+    border-left: 8px solid #f5f5f5;
+
+    padding-top: 12px;
+
+    .focustop{
+      border-bottom: 1px dashed #949494;
+      padding-bottom: 10px;
+
+      .focustopleft{
+        display: inline-block;
+        width: 110px;
+        height: 110px;
+
+        margin-right: 12px;
+        img{
+          width: 100%;
+        }
+      }
+      .focustopright{
+        display: inline-block;
+
+        width: 180px;
+        text-align: center;
+
+        .focustopright001{
+          //margin-top: -10px;
+          //display: inline-block;
+          height: 26px;
+          //line-height: 60px;
+          font-size: 26px;
+          font-weight: bold;
+          color: #44aa77 ;
+        }
+        .focustopright002{
+
+          font-size: 18px;
+          margin-top: 10px;
+        }
+        .focustopright003{
+          margin-top: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: #44aa77 ;
+        }
+
+      }
+    }
+
+    .focusweibo{
+      border-bottom:1px dashed #949494 ;
+
+      padding: 10px;
+      .focusweibopic{
+        width: 32px;
+        height: 32px;
+        img{
+          width: 100%;
+
+        }
+      }
+
+      .focusweiboright{
+        margin-left: -20px;
+        height: 32px;
+        line-height: 32px;
+        .focusweiboright001{
+          font-size: 18px;
+          margin-right: 20px;
+
+        }
+        .focusweiboright002{
+          color: #666666;
+          font-size: 13px;
+        }
+
+      }
+
+
+    }
+
+    .focusgroup{
+      padding: 12px;
+
+      .focusgrouppic{
+        width: 32px;
+        height: 32px;
+        img{
+          width: 100%;
+        }
+      }
+
+
+      .focusgroupright{
+        margin-left: -20px;
+        margin-top: -5px;
+
+        .focusgroupright001{
+          margin-right: 20px;
+        }
+        .focusgroupright002{
+          color: #44aa8c;
+
+          span:nth-child(1){
+            font-size: 18px;
+            margin-right: 10px;
+          }
+          span:nth-child(2){
+            font-size: 18px;
+            margin-right: 10px;
+          }
+          span:nth-child(3){
+            font-size: 18px;
+
+          }
+        }
+
+
+
+
+        .focusgroupright003{
+          text-align: center;
+
+          margin-left: -10px;
+
+          color: #88c3aa;
+        }
+      }
+    }
+  }
+
+}
+
 
 
 
@@ -782,11 +1114,6 @@ display: inline-block;
     }
 }
 }
-
-
-
-
-
 
 
 

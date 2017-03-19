@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap.min.css">
+
+</head>
+<body>
+
+<h1>hi</h1>
+<div class="container">
+    <!--<div class="row">-->
+        <!--<div class="col-xs-2"></div>-->
+        <!--<div class="col-xs-2"></div>-->
+        <!--<div class="col-xs-8"></div>-->
+    <!--</div>-->
+
+
+
+</div>
+
+</body>
+</html>
+<script src="../lib/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+
+<script  type="text/javascript">
+    $.ajax({
+        url:'http://localhost:8030/getlist',
+//        跨域
+        dateType:'jsonp',
+//        dateType:'json',
+
+        method:'get',
+        success:function (data) {
+//            console.log(JSON.parse(data));
+
+            var json=JSON.parse(data);
+
+            var str=''
+
+            var lsss=json.r;
+            for(var i=0;i<lsss.length;i++){
+                str+='<div class="row">'+
+
+                        ' <div class="col-xs-2">'+lsss[i].model_attr_name+'</div> '+
+                        ' <div class="col-xs-2">'+lsss[i].price+'</div></div>'
+                        + ' <div class="col-xs-8"><img src="'+lsss[i].thum_img.min+'"/></div></div>'
+
+            }
+            $('.container').html(str);
+        }
+
+    })
+</script>

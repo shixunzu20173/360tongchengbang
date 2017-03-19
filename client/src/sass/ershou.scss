@@ -5,6 +5,7 @@
 
 body{
   background:#f5f5f5 ;
+  //background: red;
 }
 
 
@@ -398,7 +399,9 @@ position: relative;
 //横排四个
 .rowfour{
   position: relative;
-  height:146px; background:gold; padding: 0;
+  height:146px;
+  background:gold;
+  padding: 0;
 
   .rowfourin{
 
@@ -631,71 +634,134 @@ position: relative;
 .pad0{
   padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
 //横排五个
+
+//右边框 5
 .br10{
-  border-right: 5px solid grey;
+  border-right: 5px solid #f5f5f5;
 
 }
+//左边框 5
 .bl5{
-  border-left: 5px solid grey;
+  border-left: 5px solid #f5f5f5;
 
 }
+.bgc0001{
+  //background: red;
+  height: 302px;
+  margin-bottom: 10px;
+  //margin-left: 135px;
+  .bgc0002{
+
+    height: 202px;
 
 
-.rowmarginbtm{
-  margin-bottom:10px;
 
-
-
-  .rowdivwhbgc{
-    height:302px; background:white;
-    text-align: center;
-
-    .pic{
-      margin: 40px auto 0;
-      width: 100px;
-      img{
-      width:100%;
-    }
-  }
-
-    .h{
-      color: black;
+    .bgc0002l1{
+      background: red;
+      height: 30px;
     }
 
-    .price{
-      .rmblogo{
-        display: inline-block;
-        color: red;
-        .nowcost{
-          font-size: 25px;
+    .bgc0002r2{
+      background: gold;
+      height: 40px;
+    }
 
+    .rowdivwhbgc{
+      height:302px; background:white;
+      text-align: center;
+
+      .pic{
+        margin: 40px auto 0;
+        width: 100px;
+        img{
+          width:100%;
         }
       }
 
-      .disori{
-        text-align: center;
-        display: inline-block;
+      .h{
+        color: black;
+      }
+
+      .price{
+        .rmblogo{
+          display: inline-block;
+          color: red;
+          .nowcost{
+            font-size: 25px;
+
+          }
+        }
+
+        .disori{
+          text-align: center;
+          display: inline-block;
 
 
-        .original{
-          display: block;
+          .original{
+            display: block;
 
-          font-size: 9px;
-          color: #9aa7b4;
+            font-size: 9px;
+            color: #9aa7b4;
+          }
         }
       }
+      .p,.lastwrite{
+        color: #9aa7b4;
+      }
+
+
+
+
+
     }
-    .p,.lastwrite{
-      color: #9aa7b4;
-    }
 
 
 
 
 
+
+
+
+  //.bgc000201{
+  //  height: 20px;
+  //  background: gold;
+  //
+  //}
+  //  .bgc000202{
+  //    height: 30px;
+  //    background: red;
+  //
+  //  }
+  //  .bgc000203{
+  //    height: 40px;
+  //    background: green;
+  //
+  //  }
+  //  .bgc000204{
+  //    height: 50px;
+  //    background: white;
+  //
+  //  }
+  //  .bgc000205{
+  //    height: 60px;
+  //    background: gold;
+  //
+  //  }
   }
 }
+
+
 
 
 
@@ -1060,16 +1126,16 @@ margin-top: 20px;
 
         .oneone{
           text-align:center;
-          .footer-icon0{
-            width: 68px;
-            height: 68px;
-            background: url("../hezuohuoban/footer001.png") no-repeat;
-            background-position:0 0 ;
-
-
-            display:inline-block;width: 68px; height: 68px;
-
-          }
+          //.footer-icon0{
+          //  width: 68px;
+          //  height: 68px;
+          //  background: url("../hezuohuoban/footer001.png") no-repeat;
+          //  background-position:0 0 ;
+          //
+          //
+          //  display:inline-block;width: 68px; height: 68px;
+          //
+          //}
         }
 
         .twotwo{

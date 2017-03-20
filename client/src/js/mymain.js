@@ -111,13 +111,22 @@ $(function() {
                 function(res){
                     console.log(res)
                     var str = '';
-                    var lists = res.result;
-                    console.log(lists.length)
-                    for(var i = 0;i < lists.length;i++){
-                        str += '<div class="rowpage">'+
-                            '<div class="col-xs-2">'+ lists[i].model_name+'</div>' +
-                            '<div class="col-xs-2">'+lists[i].price+'</div>'+
-                            '<div class="col-xs-8"><img src="'+lists[i].thum_img.min+'"/></div></div>'
+                    var lsss = res.result;
+                    console.log(lsss.length)
+                    for(var i = 0;i < lsss.length;i++){
+
+
+                        str+=' <div class="col-md-2  bgc000202 br10 bl5 rowdivwhbgc"  ><a href="" target="_blank"> <div class="pic">'+
+                            '<img  src="'+lsss[i].thum_img.min+'" alt="'+lsss[i].model_attr_name+'"> </div><h6 class="h">'+ lsss[i].title+'</h6>'+
+
+                            ' <p class="p">'+lsss[i].subhead+'</p><div class="price">'+
+                            '<div class="rmblogo">￥<span class="nowcost">'+lsss[i].price+'</span> </div>'+
+
+                            '<div class="disori"> <span class="discount">'+lsss[i].discount+'折</span>'+
+
+                            '  <del class="original">￥'+lsss[i].com_price+'</del> </div> </div> <div class="lastwrite">'+
+                            lsss[i].mer_name+'  </div> </a></div>'
+
                     }
                     console.log(str)
                     $('#container').html(str);

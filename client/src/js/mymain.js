@@ -62,10 +62,10 @@ $(function() {
 
 // 一排四个
     $.ajax({
-        url:'http://localhost:1010/rowfour',
+        url:'http://localhost:8030/rowfour',
 //        跨域
-        dateType:'jsonp',
-//        dateType:'json',
+//        dateType:'jsonp',
+        dateType:'json',
 
         method:'get',
         success:function (data) {
@@ -75,28 +75,23 @@ $(function() {
 
             var str=''
 
-            var rfr=json.rowfour;
+            var rfr=json.rowfour.flash_list;
             for(var i=0;i<rfr.length;i++){
 
-
-             str+= ' <div class="row"><div class="col-md-3 rowfour0002r10ins fourfirst "> <div class="row">'+
+                str+='<div class="col-md-3 rowfour0002r10ins fourfirst "> <div class="row">'+
                     <!--左四-->
                     '<div class="col-md-4"> <div class="left4pic">'+
                     '<img  src="'+rfr[i].thum_img.old+'" alt=""> </div> </div>'+
                     <!--右八-->
                     '<div class="col-md-8"> <div class="right8txt">'+
                     '<h4 class="tit">'+rfr[i].title+'</h4>'+
-                '<p class="intro">'+rfr[i].subhead+'</p>'+
-
                     '<del class="priceredtop">￥'+rfr[i].com_price+'</del>'+
-                    '<div class="pricered">￥<span class="numred">'+rfr[i].flash_price+'</span></div></div>'
+                    '<div class="pricered">￥<span class="numred">'+rfr[i].flash_price+'</span></div></div></div></div></div>'
 
-
-
+                
             }
-            $('.ffff').html(str);
+            $('#rowfourhtml').html(str);
         }
-
     })
 
 
@@ -104,18 +99,15 @@ $(function() {
 //分页 一排五个
 
     $(function(){
-
         function getdata(page_index,page_size){
             $.post('http://localhost:3002/getlist',
                 {page_index:page_index,page_size:page_size},
                 function(res){
-                    console.log(res)
+                    console.log(res);
                     var str = '';
                     var lsss = res.result;
-                    console.log(lsss.length)
+                    console.log(lsss.length);
                     for(var i = 0;i < lsss.length;i++){
-
-
                         str+=' <div class="col-md-2  bgc000202 br10 bl5 rowdivwhbgc"  ><a href="" target="_blank"> <div class="pic">'+
                             '<img  src="'+lsss[i].thum_img.min+'" alt="'+lsss[i].model_attr_name+'"> </div><h6 class="h">'+ lsss[i].title+'</h6>'+
 
@@ -129,7 +121,7 @@ $(function() {
 
                     }
                     console.log(str)
-                    $('#container').html(str);
+                    $('#containerss').html(str);
                 })
         }
 
@@ -142,18 +134,18 @@ $(function() {
         var initPagination = function(total) {
             // 创建分页
             console.log("total:" + total)
-            $("#Pagination").pagination(total*2, {
+            $("#Pagination").pagination(10, {
                 num_edge_entries: 2, //边缘页数
                 num_display_entries: 6, //主体页数
-                items_per_page:10,
+                items_per_page:1,
                 callback: pageselectCallback,
                 prev_text: "上一页",
-                next_text: ">>"
+                next_text: "下一页"
             });
         };
 
         function pageselectCallback(page_index, jq){
-            getdata(page_index,5);
+            getdata(page_index,20);
             return false;
         }
 
@@ -162,10 +154,52 @@ $(function() {
 
 
 // 一排五个 
+//     $.ajax({
+//         url:'http://localhost:3214/phones',
+// //        跨域
+//         dateType:'jsonp',
+// //        dateType:'json',
+//
+//         method:'get',
+//         success:function (data) {
+// //            console.log(JSON.parse(data));
+//
+//             var json=JSON.parse(data);
+//
+//             var str=''
+//
+//             var lsss=json.phoness;
+//             for(var i=0;i<lsss.length;i++){
+//
+//
+//                 str+=' <div class="col-md-2  bgc000202 br10 bl5 rowdivwhbgc"  ><a href="" target="_blank"> <div class="pic">'+
+//                     '<img  src="'+lsss[i].thum_img.min+'" alt="'+lsss[i].model_attr_name+'"> </div><h6 class="h">'+ lsss[i].title+'</h6>'+
+//
+//                ' <p class="p">'+lsss[i].subhead+'</p><div class="price">'+
+//                     '<div class="rmblogo">￥<span class="nowcost">'+lsss[i].price+'</span> </div>'+
+//
+//                     '<div class="disori"> <span class="discount">'+lsss[i].discount+'折</span>'+
+//
+//               '  <del class="original">￥'+lsss[i].com_price+'</del> </div> </div> <div class="lastwrite">'+
+//                     lsss[i].mer_name+'  </div> </a></div>'
+//
+//             }
+//             $('.rrrr').html(str);
+//         }
+//
+//     })
+
+
+
+
+
+
+    // 热销机型
+    // 一排五个
     $.ajax({
-        url:'http://localhost:3214/phones',
+        url:'http://localhost:8030/hotsell',
 //        跨域
-        dateType:'jsonp',
+        dateType:'json',
 //        dateType:'json',
 
         method:'get',
@@ -176,33 +210,37 @@ $(function() {
 
             var str=''
 
-            var lsss=json.phoness;
-            for(var i=0;i<lsss.length;i++){
-             
-                
-                str+=' <div class="col-md-2  bgc000202 br10 bl5 rowdivwhbgc"  ><a href="" target="_blank"> <div class="pic">'+
-                    '<img  src="'+lsss[i].thum_img.min+'" alt="'+lsss[i].model_attr_name+'"> </div><h6 class="h">'+ lsss[i].title+'</h6>'+
+            var less=json.hotsell.product_list;
+            for(var i=0;i<less.length;i++){
 
-               ' <p class="p">'+lsss[i].subhead+'</p><div class="price">'+
-                    '<div class="rmblogo">￥<span class="nowcost">'+lsss[i].price+'</span> </div>'+
+                str+=' <div class="col-md-2  hot0002r2 br10 bl5 rowdivwhbgc"><a href="" target="_blank"> <div class="pic">'+
+                    '<img  src="'+less[i].thum_img.min+'" alt=" "> </div>'+
 
-                    '<div class="disori"> <span class="discount">'+lsss[i].discount+'折</span>'+
+                    '<h6 class="h">'+less[i].title+'</h6>'+
+                    '<p class="p">'+less[i].selling_point+'</p>'+
+                '<div class="price"> <div class="rmblogo"><span class="nowcost">'+less[i].price+'</span> </div> </div>'+
+                    '<div class="lastwrite">'+less[i].explain+'</div> </a></div>'
 
-              '  <del class="original">￥'+lsss[i].com_price+'</del> </div> </div> <div class="lastwrite">'+
-                    lsss[i].mer_name+'  </div> </a></div>'
-                
             }
-            $('.rrrr').html(str);
+            $('#hotsellhtml').html(str);
         }
 
     })
 
 
-    
+
+
+
+
+
+
+
+
+
 // 用户晒单
 
     $.ajax({
-        url:'http://localhost:1001/usershow',
+        url:'http://localhost:8030/usershow',
 //        跨域
         dateType:'json',
 //        dateType:'json',

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+</head>
+<body>
+
+
+<h1>热销机型横排五个</h1>
+<div class="hotsellhtml">
+
+</div>
+</body>
+</html>
+
+<script src="../lib/jquery-3.1.1.js"></script>
+
+<script>
+    $.ajax({
+        url:'http://localhost:1020/hotsell',
+//        跨域
+        dateType:'json',
+//        dateType:'json',
+
+        method:'get',
+        success:function (data) {
+//            console.log(JSON.parse(data));
+
+            var json=JSON.parse(data);
+
+            var str=''
+
+            var uss=json.hotsell.product_list;
+            for(var i=0;i<uss.length;i++){
+
+//                src/usershow/usershow001001.png
+                str+='<div class="outline"> <div class="col-md-3 s1"> <span class="s1pic">'+
+                        '<img src="'+uss[i].thum_img.min+'" alt=""> </span> </div>'+
+                        '<div class="col-md-9 s2"> <div class="s2write">'+
+                        '<p>'+uss[i].title+'</p>'+
+                        '<p>'+uss[i].selling_point+'</p> </div> </div> </div>'
+
+            }
+            $('.hotsellhtml').html(str);
+        }
+
+    })
+
+
+</script>

@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>rowfour</h1>
-<div class="container">
+<div class="rowfourhtml">
 
 </div>
 
@@ -17,7 +17,7 @@
 
 <script>
     $.ajax({
-        url:'http://localhost:1010/rowfour',
+        url:'http://localhost:1030/rowfour',
 //        跨域
 //        dateType:'jsonp',
         dateType:'json',
@@ -30,31 +30,19 @@
 
             var str=''
 
-            var rfr=json.rowfour;
+            var rfr=json.rowfour.flash_list;
             for(var i=0;i<rfr.length;i++){
 
-
-
               str+=  '<div class="row">'+
-
                 ' <div class="col-xs-2">'+rfr[i].title+'</div> '+
                 ' <div class="col-xs-2">'+rfr[i].subhead+'</div></div>'
                 + ' <div class="col-xs-8"><img src="'+rfr[i].thum_img.old+'"/></div></div>'
 
 
-
-
-
-
-
-
             }
-            $('.container').html(str);
+            $('.rowfourhtml').html(str);
         }
-
     })
-
-
 </script>
 
 

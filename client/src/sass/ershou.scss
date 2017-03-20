@@ -8,9 +8,6 @@ body{
   //background: red;
 }
 
-
-
-
 //用户晒单
 .usershow{
 
@@ -24,10 +21,6 @@ body{
   }
 
 }
-
-
-
-
 .navtopoutside {
   border-bottom: 1px solid #c2c2c2;
   .navtop {
@@ -96,7 +89,6 @@ body{
 
   }
 }
-
 .logobgc{
   height: 85px;
   background: white;
@@ -190,14 +182,12 @@ display: inline-block;
     }
   }
 }
-
 .bgred{
   background: red;
 }
 .bggr{
   background: green;
 }
-
 .banner{
   height:242px;
   background:blue;
@@ -396,8 +386,264 @@ position: relative;
 
 }
 
-
 //横排四个
+
+
+
+//.rowfour0001{
+//  position: relative;
+//  height:146px;
+//  background: yellow;
+//  .rowfour0002{
+//    height: 80px;
+//    background: pink;
+//
+//    .rowfour0002l1{
+//      height: 70px;
+//      background: green;
+//    }
+//
+//      .rowfour0002r10ins{
+//        //height: 50px;
+//        //background: yellow;
+//
+//        //border-right: 1px solid black;
+//
+//
+//      }
+//
+//
+//      .fourfirst{
+//        border-right: 1px solid #f5f5f5;
+//        padding: 0;
+//        //padding-left: 10px;
+//        background: white;
+//        height:146px;
+//        //左四 图片
+//        .left4pic{
+//          height:146px;
+//          line-height: 146px;
+//
+//          img{
+//            width: 100%;
+//          }
+//        }
+//        //右八 文字
+//        .right8txt{
+//          padding-left: 10px;
+//
+//          .intro{
+//            color: #bcbcbc;
+//            line-height: 5px;
+//          }
+//          .priceredtop{
+//            font-size: 11px;
+//            display: inline-block;
+//            padding-top: 8px;
+//
+//          }
+//          .pricered{
+//            margin-top: -6px;
+//            color: red;
+//
+//            .numred{
+//              font-size: 24px;
+//            }
+//          }
+//
+//          .seckill{
+//            padding-top: 12px;
+//
+//            display: inline-block;
+//
+//          }
+//          .seckilltime{
+//            display: inline-block;
+//          }
+//
+//        }
+//      }
+//
+//      //.foursecond{
+//      //  border-right: 1px solid #f5f5f5;
+//      //  padding: 0;
+//      //  padding-left: 10px;
+//      //  background: white;
+//      //  height:146px;
+//      //  .left4pic{
+//      //    height:146px;
+//      //    line-height: 146px;
+//      //
+//      //    img{
+//      //      width: 100%;
+//      //    }
+//      //  }
+//      //
+//      //  .right8txt{
+//      //    padding-left: 10px;
+//      //
+//      //    .intro{
+//      //      color: #bcbcbc;
+//      //      line-height: 5px;
+//      //    }
+//      //
+//      //    .priceredtop{
+//      //      font-size: 11px;
+//      //      display: inline-block;
+//      //      padding-top: 8px;
+//      //
+//      //    }
+//      //    .pricered{
+//      //      margin-top: -6px;
+//      //      color: red;
+//      //
+//      //      .numred{
+//      //        font-size: 24px;
+//      //      }
+//      //    }
+//      //
+//      //    .seckill{
+//      //      padding-top: 12px;
+//      //
+//      //      display: inline-block;
+//      //
+//      //    }
+//      //    .seckilltime{
+//      //      display: inline-block;
+//      //    }
+//      //
+//      //  }
+//      //}
+//      //
+//      //.fourthird{
+//      //  border-right: 1px solid #f5f5f5;
+//      //  padding: 0;
+//      //  padding-left: 10px;
+//      //
+//      //  background: white;
+//      //  height:146px;
+//      //
+//      //  .left4pic{
+//      //    height:146px;
+//      //    line-height: 146px;
+//      //
+//      //    img{
+//      //      width: 100%;
+//      //    }
+//      //  }
+//      //
+//      //
+//      //
+//      //  .right8txt{
+//      //    padding-left: 10px;
+//      //
+//      //    .intro{
+//      //      color: #bcbcbc;
+//      //      line-height: 5px;
+//      //    }
+//      //
+//      //    .priceredtop{
+//      //      font-size: 11px;
+//      //      display: inline-block;
+//      //      padding-top: 8px;
+//      //
+//      //    }
+//      //    .pricered{
+//      //      margin-top: -6px;
+//      //      color: red;
+//      //
+//      //      .numred{
+//      //        font-size: 24px;
+//      //      }
+//      //    }
+//      //
+//      //    .seckill{
+//      //      padding-top: 12px;
+//      //
+//      //      display: inline-block;
+//      //
+//      //    }
+//      //    .seckilltime{
+//      //      display: inline-block;
+//      //    }
+//      //
+//      //  }
+//      //}
+//      //
+//      //.fourfourth{
+//      //
+//      //
+//      //  padding: 0;
+//      //  padding-left: 10px;
+//      //
+//      //  background: white;
+//      //  height:146px;
+//      //
+//      //  .left4pic{
+//      //    height:146px;
+//      //    line-height: 146px;
+//      //
+//      //    img{
+//      //      width: 100%;
+//      //    }
+//      //  }
+//      //
+//      //
+//      //
+//      //  .right8txt{
+//      //    padding-left: 10px;
+//      //
+//      //    .intro{
+//      //      color: #bcbcbc;
+//      //      line-height: 5px;
+//      //    }
+//      //
+//      //    .priceredtop{
+//      //      font-size: 11px;
+//      //      display: inline-block;
+//      //      padding-top: 8px;
+//      //
+//      //    }
+//      //    .pricered{
+//      //      margin-top: -6px;
+//      //      color: red;
+//      //
+//      //      .numred{
+//      //        font-size: 24px;
+//      //      }
+//      //    }
+//      //
+//      //    .seckill{
+//      //      padding-top: 12px;
+//      //
+//      //      display: inline-block;
+//      //
+//      //    }
+//      //    .seckilltime{
+//      //      display: inline-block;
+//      //    }
+//      //
+//      //  }
+//      //}
+//
+//  }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//横排四个 之前的
 .rowfour0001{
 
 
@@ -673,18 +919,32 @@ position: relative;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pad0{
   padding: 0;
 }
-
-
-
-
-
-
-
-
-
 
 //横排五个
 
@@ -705,7 +965,7 @@ position: relative;
   //margin-bottom: 10px;
 
 
-  margin-bottom: 500px;
+  //margin-bottom: 500px;
   //margin-left: 135px;
   .bgc0002{
 
@@ -714,21 +974,21 @@ position: relative;
 
 
     .bgc0002l1{
-      background: red;
-      height: 30px;
+      //background: red;
+      height: 1000px;
     }
 
-    .bgc0002r2{
-      background: gold;
-      height: 40px;
-
-
-      margin-bottom: 100px;
-    }
+    //.bgc0002r2{
+    //  background: gold;
+    //  height: 40px;
+    //}
 
     .rowdivwhbgc{
       height:302px; background:white;
       text-align: center;
+
+      margin-bottom: 10px;
+
 
       .pic{
         margin: 40px auto 0;
@@ -777,6 +1037,13 @@ position: relative;
 
 
 
+    .rowdivwhbgc:hover{
+      transform:scale(1.02);
+      box-shadow:0px 1px 30px 2px #C0C0C0;
+      z-index:5;
+    }
+
+
 
 
 
@@ -812,6 +1079,105 @@ position: relative;
 
 
 
+//热销机型
+.hot0001{
+  //background: red;
+  height: 302px;
+  //margin-bottom: 10px;
+
+
+  //margin-bottom: 500px;
+  //margin-left: 135px;
+  .hot0002{
+
+    height: 202px;
+
+
+
+    .hot0002l1{
+      background: red;
+      height: 30px;
+    }
+
+    .hot0002r2{
+      background: gold;
+      height: 40px;
+
+
+
+    }
+    //每块的宽高背景色
+    .rowdivwhbgc{
+
+      height:302px; background:white;
+      text-align: center;
+
+      .pic{
+        margin: 40px auto 0;
+        width: 100px;
+        img{
+          width:100%;
+        }
+      }
+
+      .h{
+        color: black;
+      }
+
+      .price{
+            font-size: 25px;
+            color: red;
+      }
+
+      .p{
+        color: #9aa7b4;
+      }
+    .lastwrite{
+      color: red;
+    }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    //.bgc000201{
+    //  height: 20px;
+    //  background: gold;
+    //
+    //}
+    //  .bgc000202{
+    //    height: 30px;
+    //    background: red;
+    //
+    //  }
+    //  .bgc000203{
+    //    height: 40px;
+    //    background: green;
+    //
+    //  }
+    //  .bgc000204{
+    //    height: 50px;
+    //    background: white;
+    //
+    //  }
+    //  .bgc000205{
+    //    height: 60px;
+    //    background: gold;
+    //
+    //  }
+  }
+}
 
 
 .partners{

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="dist/sweiper.min.css">
       <link rel="stylesheet" href="dist/ershou.min.css">
+      <link rel="stylesheet" href="dist/pagination.css">
 
   </head>
 
@@ -16,7 +17,11 @@
 
   <style type="text/css">
 
-
+      .rowpage{
+          height:100px;
+          line-height: 100px;
+          border-bottom: solid 1px #888;
+      }
 
       /*//左右箭头，绝对定位*/
       .arrowleft{
@@ -94,6 +99,10 @@
 
 
   <body>
+
+
+
+
 
 <!--rowfour横排四个-->
   <!--<div class="ffff">-->
@@ -796,6 +805,14 @@
             </div>
             <div class="col-md-2  bgc0002r2 bl5"></div>
 
+
+            <h1>  ajax 列表分页 </h1>
+            <div class="container" id="container"></div>
+
+            <div id="Pagination" class="pagination"></div>
+
+
+
         </div>
 
 
@@ -805,484 +822,42 @@
 
 </div>
 
-<!--第二排-->
-<!--<div class="container-fluid bgc0001">-->
-    <!--<div class="row bgc0002 " >-->
-        <!--&lt;!&ndash;左边一个&ndash;&gt;-->
-        <!--<div class="col-md-1 bgc0002l1 "></div>-->
 
-        <!--&lt;!&ndash;右边五个，每个占两格&ndash;&gt;-->
-        <!--<div class="rrrr0002">-->
-            <!--<div class="col-md-2  bgc0002r2 br10">-->
 
 
 
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
 
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
 
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 bl5">-->
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-
-        <!--</div>-->
-
-
-    <!--</div>-->
-
-
-
-<!--</div>-->
-
-<!--<div class="container-fluid bgc0001">-->
-    <!--<div class="row bgc0002 " >-->
-        <!--&lt;!&ndash;左边一个&ndash;&gt;-->
-        <!--<div class="col-md-1 bgc0002l1 "></div>-->
-
-        <!--&lt;!&ndash;右边五个，每个占两格&ndash;&gt;-->
-        <!--<div class="rrrr0003">-->
-            <!--<div class="col-md-2  bgc0002r2 br10">-->
-
-
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 bl5">-->
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-
-        <!--</div>-->
-
-
-    <!--</div>-->
-
-
-
-<!--</div>-->
-
-
-<!--<div class="container-fluid bgc0001">-->
-    <!--<div class="row bgc0002 " >-->
-        <!--&lt;!&ndash;左边一个&ndash;&gt;-->
-        <!--<div class="col-md-1 bgc0002l1 "></div>-->
-
-        <!--&lt;!&ndash;右边五个，每个占两格&ndash;&gt;-->
-        <!--<div class="rrrr0004">-->
-            <!--<div class="col-md-2  bgc0002r2 br10">-->
-
-
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 br10 bl5">-->
-
-
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-            <!--<div class="col-md-2  bgc0002r2 bl5">-->
-
-                <!--&lt;!&ndash;bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<a href="" target="_blank">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<h6 class="h">三星 J7</h6>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<p class="p">9成新 16 G 白色</p>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="price">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="rmblogo">￥<span class="nowcost">650</span>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="disori">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="discount">3.6折</span>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<del class="original">￥1798</del>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div class="lastwrite">&ndash;&gt;-->
-                <!--&lt;!&ndash;真机实拍，保修180天&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;</a>&ndash;&gt;-->
-
-            <!--</div>-->
-
-        <!--</div>-->
-
-
-    <!--</div>-->
-
-
-
-<!--</div>-->
 
 
 
 
 
       <!--翻页-->
-      <div class="container-fluid " >
-          <div class="row">
-        <div class="col-md-12" style="text-align:center;height:40px;  padding: 0; ">
+      <!--<div class="container-fluid " >-->
+          <!--<div class="row">-->
+        <!--<div class="col-md-12" style="text-align:center;height:40px;  padding: 0; ">-->
 
-          <ul class="pagination" style="height: 40px; ">
-          <li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">1</a></li>
-          <li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">2</a></li>
-          <li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">3</a></li>
-          <li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">4</a></li>
-          <li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">5</a></li>
-          <li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">6</a></li>
-          <li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">7</a></li>
-          <li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">8</a></li>
-          <li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">9</a></li>
-          <li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">10</a></li>
-          <li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">下一页&raquo;</a></li>
-          </ul>
+          <!--<ul class="pagination" style="height: 40px; ">-->
+          <!--<li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">1</a></li>-->
+          <!--<li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">2</a></li>-->
+          <!--<li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">3</a></li>-->
+          <!--<li style="display:inline-block; height: 40px; margin-right: 4px"><a href="#">4</a></li>-->
+          <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">5</a></li>-->
+          <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">6</a></li>-->
+          <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">7</a></li>-->
+          <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">8</a></li>-->
+          <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">9</a></li>-->
+          <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">10</a></li>-->
+          <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">下一页&raquo;</a></li>-->
+          <!--</ul>-->
 
 
 
-          </div>
+          <!--</div>-->
 
-          </div>
-          </div>
+          <!--</div>-->
+          <!--</div>-->
 
       <!--热销机型-->
       <div class="container-fluid">
@@ -1937,6 +1512,7 @@
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="lib/jquery-3.1.1.js"></script>
+  <script src="lib/jquery.pagination.js"></script>
 
   <link rel="stylesheet" href="dist/swiper.min.js">
   <script src="dist/swiper.min.js"></script>

@@ -101,9 +101,54 @@ $(function() {
 
 
 
+//分页 一排五个
 
+    $(function(){
 
+        function getdata(page_index,page_size){
+            $.post('http://localhost:3002/getlist',
+                {page_index:page_index,page_size:page_size},
+                function(res){
+                    console.log(res)
+                    var str = '';
+                    var lists = res.result;
+                    console.log(lists.length)
+                    for(var i = 0;i < lists.length;i++){
+                        str += '<div class="rowpage">'+
+                            '<div class="col-xs-2">'+ lists[i].model_name+'</div>' +
+                            '<div class="col-xs-2">'+lists[i].price+'</div>'+
+                            '<div class="col-xs-8"><img src="'+lists[i].thum_img.min+'"/></div></div>'
+                    }
+                    console.log(str)
+                    $('#container').html(str);
+                })
+        }
 
+        $.get('http://localhost:3002/gettotal',function(res){
+            var total = res.length;
+            // console.log(total)
+            initPagination(total);
+        })
+
+        var initPagination = function(total) {
+            // 创建分页
+            console.log("total:" + total)
+            $("#Pagination").pagination(total*2, {
+                num_edge_entries: 2, //边缘页数
+                num_display_entries: 6, //主体页数
+                items_per_page:10,
+                callback: pageselectCallback,
+                prev_text: "上一页",
+                next_text: ">>"
+            });
+        };
+
+        function pageselectCallback(page_index, jq){
+            getdata(page_index,5);
+            return false;
+        }
+
+    });
 
 
 

@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
 </head>
 <body>
-<div class="rf">
+<h1>rowfour</h1>
+<div class="container">
 
 </div>
 
@@ -18,8 +19,8 @@
     $.ajax({
         url:'http://localhost:1010/rowfour',
 //        跨域
-        dateType:'jsonp',
-//        dateType:'json',
+//        dateType:'jsonp',
+        dateType:'json',
 
         method:'get',
         success:function (data) {
@@ -29,21 +30,90 @@
 
             var str=''
 
-            var rowf=json.rowfour;
+            var rfr=json.rowfour;
+            for(var i=0;i<rfr.length;i++){
 
-            for(var i=0;i<rowf.length;i++){
 
-                str+='<div > <div > <span >'+
-                        '<img src="'+rowf[i].thum_img.old+'" alt=""> </span> </div>'+
-                        '<div > <div >'+
-                        '<p>'+rowf[i].title+'</p>'+
-                        '<p>'+rowf[i].subhead+'</p> </div> </div> </div>'
+
+              str+=  '<div class="row">'+
+
+                ' <div class="col-xs-2">'+rfr[i].title+'</div> '+
+                ' <div class="col-xs-2">'+rfr[i].subhead+'</div></div>'
+                + ' <div class="col-xs-8"><img src="'+rfr[i].thum_img.old+'"/></div></div>'
+
+
+
+
+
+
+
 
             }
-            $('.rf').html(str);
+            $('.container').html(str);
         }
 
     })
 
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--备份 调用排版一例-->
+
+
+
+<!--$.ajax({-->
+<!--url:'http://localhost:1010/rowfour',-->
+<!--//        跨域-->
+<!--dateType:'jsonp',-->
+<!--//        dateType:'json',-->
+
+<!--method:'get',-->
+<!--success:function (data) {-->
+<!--//            console.log(JSON.parse(data));-->
+
+<!--var json=JSON.parse(data);-->
+
+<!--var str=''-->
+
+<!--var rfr=json.rowfour;-->
+<!--for(var i=0;i<rfr.length;i++){-->
+
+
+<!--str+='<div class="container-fluid col-lg-4"> <div class="row"> <div class="left4pic">'+-->
+    <!--'<img  src="'+rfr[i].thum_img.old+'" alt=""> </div> </div> </div>'+-->
+<!--&lt;!&ndash;右八&ndash;&gt;-->
+<!--'<div class="container-fluid col-lg-8"> <div class="row"> <div class="right8txt">'+-->
+    <!--'<h4 class="tit">'+rfr[i].title+'</h4>'+-->
+    <!--'<p class="intro">'+rfr[i].subhead+'</p>'+-->
+
+    <!--'<del class="priceredtop">￥'+rfr[i].com_price+'</del>'+-->
+    <!--'<div class="pricered">￥<span class="numred">'+rfr[i].flash_price+'</span></div> </div> </div> </div>'-->
+
+
+
+<!--}-->
+<!--$('.ffff').html(str);-->
+<!--}-->
+
+<!--})-->
+
+
+
+
+
+
+
+

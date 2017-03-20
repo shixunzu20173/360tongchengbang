@@ -396,240 +396,282 @@ position: relative;
 
 }
 
+
 //横排四个
-.rowfour{
+.rowfour0001{
+
+
   position: relative;
-  height:146px;
-  background:gold;
-  padding: 0;
+    height:146px;
+  //  background:gold;
+  //  padding: 0;
 
-  .rowfourin{
 
-    padding: 0;
+  .rowfour0002{
+    //height: 80px;
+    //background: pink;
 
-    .fourfirst{
-      border-right: 1px solid #f5f5f5;
+    .rowfour0002l1{
+      //height: 70px;
+      //background: green;
+    }
+    .rowfour0002r10{
+      position: relative;
+      //height: 60px;
+      //background: orange;
 
-      padding: 0;
-      padding-left: 10px;
+      .rowfour0002r10ins{
+        //height: 50px;
+       //background: yellow;
 
-      background: white;
-      height:146px;
+        //border-right: 1px solid black;
 
-      .left4pic{
+
+          }
+
+
+      .fourfirst{
+        border-right: 1px solid #f5f5f5;
+
+        padding: 0;
+        padding-left: 10px;
+
+        background: white;
         height:146px;
-        line-height: 146px;
 
-        img{
-          width: 100%;
+        //左四 图片
+        .left4pic{
+          height:146px;
+          line-height: 146px;
+
+          img{
+            width: 100%;
+          }
+        }
+
+//右八 文字
+
+        .right8txt{
+          padding-left: 10px;
+
+          .intro{
+            color: #bcbcbc;
+            line-height: 5px;
+          }
+
+          .priceredtop{
+            font-size: 11px;
+            display: inline-block;
+            padding-top: 8px;
+
+          }
+          .pricered{
+            margin-top: -6px;
+            color: red;
+
+            .numred{
+              font-size: 24px;
+            }
+          }
+
+          .seckill{
+            padding-top: 12px;
+
+            display: inline-block;
+
+          }
+          .seckilltime{
+            display: inline-block;
+          }
+
         }
       }
 
-
-
-      .right8txt{
+      .foursecond{
+        border-right: 1px solid #f5f5f5;
+        padding: 0;
         padding-left: 10px;
 
-        .intro{
-          color: #bcbcbc;
-          line-height: 5px;
-        }
+        background: white;
+        height:146px;
 
-        .priceredtop{
-          font-size: 11px;
-          display: inline-block;
-          padding-top: 8px;
+        .left4pic{
+          height:146px;
+          line-height: 146px;
 
-        }
-        .pricered{
-          margin-top: -6px;
-          color: red;
-
-          .numred{
-            font-size: 24px;
+          img{
+            width: 100%;
           }
         }
 
-        .seckill{
-          padding-top: 12px;
 
-          display: inline-block;
+
+        .right8txt{
+          padding-left: 10px;
+
+          .intro{
+            color: #bcbcbc;
+            line-height: 5px;
+          }
+
+          .priceredtop{
+            font-size: 11px;
+            display: inline-block;
+            padding-top: 8px;
 
           }
-        .seckilltime{
-          display: inline-block;
+          .pricered{
+            margin-top: -6px;
+            color: red;
+
+            .numred{
+              font-size: 24px;
+            }
+          }
+
+          .seckill{
+            padding-top: 12px;
+
+            display: inline-block;
+
+          }
+          .seckilltime{
+            display: inline-block;
+          }
+
         }
+      }
+
+      .fourthird{
+        border-right: 1px solid #f5f5f5;
+        padding: 0;
+        padding-left: 10px;
+
+        background: white;
+        height:146px;
+
+        .left4pic{
+          height:146px;
+          line-height: 146px;
+
+          img{
+            width: 100%;
+          }
+        }
+
+
+
+        .right8txt{
+          padding-left: 10px;
+
+          .intro{
+            color: #bcbcbc;
+            line-height: 5px;
+          }
+
+          .priceredtop{
+            font-size: 11px;
+            display: inline-block;
+            padding-top: 8px;
+
+          }
+          .pricered{
+            margin-top: -6px;
+            color: red;
+
+            .numred{
+              font-size: 24px;
+            }
+          }
+
+          .seckill{
+            padding-top: 12px;
+
+            display: inline-block;
+
+          }
+          .seckilltime{
+            display: inline-block;
+          }
+
+        }
+      }
+
+      .fourfourth{
+
+
+        padding: 0;
+        padding-left: 10px;
+
+        background: white;
+        height:146px;
+
+        .left4pic{
+          height:146px;
+          line-height: 146px;
+
+          img{
+            width: 100%;
+          }
+        }
+
+
+
+        .right8txt{
+          padding-left: 10px;
+
+          .intro{
+            color: #bcbcbc;
+            line-height: 5px;
+          }
+
+          .priceredtop{
+            font-size: 11px;
+            display: inline-block;
+            padding-top: 8px;
+
+          }
+          .pricered{
+            margin-top: -6px;
+            color: red;
+
+            .numred{
+              font-size: 24px;
+            }
+          }
+
+          .seckill{
+            padding-top: 12px;
+
+            display: inline-block;
+
+          }
+          .seckilltime{
+            display: inline-block;
+          }
+
+        }
+      }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
 
       }
     }
 
-    .foursecond{
-      border-right: 1px solid #f5f5f5;
-      padding: 0;
-      padding-left: 10px;
-
-      background: white;
-      height:146px;
-
-      .left4pic{
-        height:146px;
-        line-height: 146px;
-
-        img{
-          width: 100%;
-        }
-      }
 
 
 
-      .right8txt{
-        padding-left: 10px;
-
-        .intro{
-          color: #bcbcbc;
-          line-height: 5px;
-        }
-
-        .priceredtop{
-          font-size: 11px;
-          display: inline-block;
-          padding-top: 8px;
-
-        }
-        .pricered{
-          margin-top: -6px;
-          color: red;
-
-          .numred{
-            font-size: 24px;
-          }
-        }
-
-        .seckill{
-          padding-top: 12px;
-
-          display: inline-block;
-
-        }
-        .seckilltime{
-          display: inline-block;
-        }
-
-      }
-    }
-
-    .fourthird{
-      border-right: 1px solid #f5f5f5;
-      padding: 0;
-      padding-left: 10px;
-
-      background: white;
-      height:146px;
-
-      .left4pic{
-        height:146px;
-        line-height: 146px;
-
-        img{
-          width: 100%;
-        }
-      }
-
-
-
-      .right8txt{
-        padding-left: 10px;
-
-        .intro{
-          color: #bcbcbc;
-          line-height: 5px;
-        }
-
-        .priceredtop{
-          font-size: 11px;
-          display: inline-block;
-          padding-top: 8px;
-
-        }
-        .pricered{
-          margin-top: -6px;
-          color: red;
-
-          .numred{
-            font-size: 24px;
-          }
-        }
-
-        .seckill{
-          padding-top: 12px;
-
-          display: inline-block;
-
-        }
-        .seckilltime{
-          display: inline-block;
-        }
-
-      }
-    }
-
-    .fourfourth{
-
-
-      padding: 0;
-      padding-left: 10px;
-
-      background: white;
-      height:146px;
-
-      .left4pic{
-        height:146px;
-        line-height: 146px;
-
-        img{
-          width: 100%;
-        }
-      }
-
-
-
-      .right8txt{
-        padding-left: 10px;
-
-        .intro{
-          color: #bcbcbc;
-          line-height: 5px;
-        }
-
-        .priceredtop{
-          font-size: 11px;
-          display: inline-block;
-          padding-top: 8px;
-
-        }
-        .pricered{
-          margin-top: -6px;
-          color: red;
-
-          .numred{
-            font-size: 24px;
-          }
-        }
-
-        .seckill{
-          padding-top: 12px;
-
-          display: inline-block;
-
-        }
-        .seckilltime{
-          display: inline-block;
-        }
-
-      }
-    }
-  }
-}
 
 .pad0{
   padding: 0;

@@ -5,17 +5,6 @@
     <meta charset="utf-8">
     <title></title>
 
-
-      <!--<style type="text/css">-->
-
-          <!--&lt;!&ndash;body{background-image:url("src/images/centercentercenter.png");-->
-              <!--background-repeat:no-repeat;-->
-              <!--background-attachment:fixed;-->
-              <!--background-position:50% 50%-->
-          <!--}&ndash;&gt;-->
-      <!--</style>-->
-
-
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="dist/sweiper.min.css">
       <link rel="stylesheet" href="dist/ershou.min.css">
@@ -29,35 +18,36 @@
 
 
 
+      /*//左右箭头，绝对定位*/
+      .arrowleft{
+          display: inline-block;
+          width: 47px;
+          height: 48px;
 
-  .arrowleft{
-      display: inline-block;
-      width: 47px;
-      height: 48px;
+          background:url("src/images/lrarrow.png") no-repeat 0 -97px;
+          /*background-size:100% 100% ;*/
+          position: absolute;
+          left: -25px;
+          top: 55px;
 
-      background:url("src/images/lrarrow.png") no-repeat 0 -97px;
-      /*background-size:100% 100% ;*/
-      position: absolute;
-      left: -25px;
-      top: 55px;
+          z-index: 999;
 
-      z-index: 999;
+      }
+      .arrowright{
+          display: inline-block;
+          width: 47px;
+          height: 48px;
 
-  }
-  .arrowright{
-      display: inline-block;
-      width: 47px;
-      height: 48px;
+          background:url("src/images/lrarrow.png") no-repeat -48px -97px;
+          /*background-size:100% 100% ;*/
 
-      background:url("src/images/lrarrow.png") no-repeat -48px -97px;
-      /*background-size:100% 100% ;*/
+          position: absolute;
+          top: 55px;
+          right: -25px;
 
-      position: absolute;
-      top: 55px;
-      right: -25px;
+          z-index: 999;
+      }
 
-      z-index: 999;
-  }
       .discount{
           /*text-align: center;*/
           color: black;
@@ -104,6 +94,11 @@
 
 
   <body>
+
+<!--rowfour横排四个-->
+  <!--<div class="ffff">-->
+
+  <!--</div>-->
 
 <!--<div class="containers">-->
 
@@ -158,9 +153,6 @@
       </div>
 
   </div>
-
-
-
   <!--LOGO-->
   <div class="container-fluid">
       <!--占满宽度 设置背景白色-->
@@ -240,8 +232,6 @@
       </div>
 
   </div>
-
-
   <!--banner-->
       <div class="container-fluid" >
           <div class="row">
@@ -405,262 +395,272 @@
       </div>
 
   <!--横排四个-->
-
-  <!--横排四个-->
 <!--最外边 占满宽-->
-  <div class="container-fluid" >
-      <div class="row">
-<!--中间十份-->
-      <div class="col-md-10 col-md-offset-1 rowfour" >
+
+<div class="container-fluid rowfour0001">
 
 
-<!--中间十份 内部-->
-          <div class="container-fluid" >
-              <div class="row">
-                  <!--中间十份 内部-->
-              <div class="col-lg-12 rowfourin" >
+<div class="row rowfour0002">
 
-<!--左右箭头，绝对定位-->
-                  <span class="arrowleft">
-                      <!--<img src="src/images/lrarrow.png" alt="">-->
-                  </span>
+    <!--左一份-->
+    <div class="col-md-1 rowfour0002l1"></div>
+    <!--右十份-->
+    <div class="col-md-10 rowfour0002r10 ffff">
+        <!--左右箭头，绝对定位-->
+            <span class="arrowleft">
+            <!--<img src="src/images/lrarrow.png" alt="">-->
+            </span>
 
-                    <span class="arrowright">
-                      <!--<img src="src/images/lrarrow.png" alt="">-->
-                  </span>
-
-                  <!--一-->
-                  <div class="col-lg-3 fourfirst" >
-
-                      <!--左四-->
-                      <div class="container-fluid col-lg-4">
-                          <div class="row">
-                              <div class="left4pic">
-                          <img  src="src/images/phone0102.jpg" alt="">
-                              </div>
-                          </div>
-                      </div>
-                        <!--右八-->
-                      <div class="container-fluid col-lg-8">
-                          <div class="row">
-
-                              <div class="right8txt">
-                                  <h4 class="tit">戴尔 INS 3568</h4>
-                                  <p class="intro">官方翻新  黑色</p>
-
-                                  <!--做空格用-->
-                                  <!--<div class="p-price-orig">-->
-                                  <!--</div>-->
-                                  <!---->
-                                  <del class="priceredtop">￥1798</del>
-                                  <div class="pricered">￥<span class="numred">2899</span></div>
-
-                                  <!--鼠标扫过显示-->
-                                  <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
-
-                                  <!--秒杀-->
-                                  <div class="seckill">秒杀</div>
-                                  <!--倒计时-->
-                                  <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
-                                      <span class="desc-txt desc-txt-before"> </span>
-                                      <span class="d-num">0</span>
-                                      <span class="d-txt">天 </span>
-                                      <span class="h-num">84</span>
-                                      <span class="h-txt">:</span>
-                                      <span class="m-num">23</span>
-                                      <span class="m-txt">:</span>
-                                  <span class="s-num">06</span><span class="s-txt">
-
-                                  </span>
-                                  <span class="desc-txt-behind">
-
-                                  </span>
-                              </div>
-                              </div>
-                          </div>
-
-                      </div>
-
-                  </div>
-                  <!--二-->
-
-
-                      <div class="col-lg-3 foursecond" >
-
-                          <!--左四-->
-                          <div class="container-fluid col-lg-4">
-                              <div class="row">
-                                  <div class="left4pic">
-                                      <img  src="src/images/phone0102.jpg" alt="">
-                                  </div>
-                              </div>
-                          </div>
-                          <!--右八-->
-                          <div class="container-fluid col-lg-8">
-                              <div class="row">
-
-                                  <div class="right8txt">
-                                      <h4 class="tit">戴尔 INS 3568</h4>
-                                      <p class="intro">官方翻新  黑色</p>
-
-                                      <!--做空格用-->
-                                      <!--<div class="p-price-orig">-->
-                                      <!--</div>-->
-                                      <!---->
-                                      <del class="priceredtop">￥1798</del>
-                                      <div class="pricered">￥<span class="numred">2899</span></div>
-
-                                      <!--鼠标扫过显示-->
-                                      <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
-
-                                      <!--秒杀-->
-                                      <div class="seckill">秒杀</div>
-                                      <!--倒计时-->
-                                      <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
-                                          <span class="desc-txt desc-txt-before"> </span>
-                                          <span class="d-num">0</span>
-                                          <span class="d-txt">天 </span>
-                                          <span class="h-num">84</span>
-                                          <span class="h-txt">:</span>
-                                          <span class="m-num">23</span>
-                                          <span class="m-txt">:</span>
-                                          <span class="s-num">06</span><span class="s-txt">
-
-                                  </span>
-                                  <span class="desc-txt-behind">
-
-                                  </span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-
-                      </div>
-
-
-                  <!--三-->
-
-                      <div class="col-lg-3 fourthird" >
-
-                          <!--左四-->
-                          <div class="container-fluid col-lg-4">
-                              <div class="row">
-                                  <div class="left4pic">
-                                      <img  src="src/images/phone0102.jpg" alt="">
-                                  </div>
-                              </div>
-                          </div>
-                          <!--右八-->
-                          <div class="container-fluid col-lg-8">
-                              <div class="row">
-
-                                  <div class="right8txt">
-                                      <h4 class="tit">戴尔 INS 3568</h4>
-                                      <p class="intro">官方翻新  黑色</p>
-
-                                      <!--做空格用-->
-                                      <!--<div class="p-price-orig">-->
-                                      <!--</div>-->
-                                      <!---->
-                                      <del class="priceredtop">￥1798</del>
-                                      <div class="pricered">￥<span class="numred">2899</span></div>
-
-                                      <!--鼠标扫过显示-->
-                                      <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
-
-                                      <!--秒杀-->
-                                      <div class="seckill">秒杀</div>
-                                      <!--倒计时-->
-                                      <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
-                                          <span class="desc-txt desc-txt-before"> </span>
-                                          <span class="d-num">0</span>
-                                          <span class="d-txt">天 </span>
-                                          <span class="h-num">84</span>
-                                          <span class="h-txt">:</span>
-                                          <span class="m-num">23</span>
-                                          <span class="m-txt">:</span>
-                                          <span class="s-num">06</span><span class="s-txt">
-
-                                  </span>
-                                  <span class="desc-txt-behind">
-
-                                  </span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-
-                      </div>
-
-                  <!--四-->
-
-                  <div class="col-lg-3 fourfourth" >
-
-                      <!--左四-->
-                      <div class="container-fluid col-lg-4">
-                          <div class="row">
-                              <div class="left4pic">
-                                  <img  src="src/images/phone0102.jpg" alt="">
-                              </div>
-                          </div>
-                      </div>
-                      <!--右八-->
-                      <div class="container-fluid col-lg-8">
-                          <div class="row">
-
-                              <div class="right8txt">
-                                  <h4 class="tit">戴尔 INS 3568</h4>
-                                  <p class="intro">官方翻新  黑色</p>
-
-                                  <!--做空格用-->
-                                  <!--<div class="p-price-orig">-->
-                                  <!--</div>-->
-                                  <!---->
-                                  <del class="priceredtop">￥1798</del>
-                                  <div class="pricered">￥<span class="numred">2899</span></div>
-
-                                  <!--鼠标扫过显示-->
-                                  <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
-
-                                  <!--秒杀-->
-                                  <div class="seckill">秒杀</div>
-                                  <!--倒计时-->
-                                  <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
-                                      <span class="desc-txt desc-txt-before"> </span>
-                                      <span class="d-num">0</span>
-                                      <span class="d-txt">天 </span>
-                                      <span class="h-num">84</span>
-                                      <span class="h-txt">:</span>
-                                      <span class="m-num">23</span>
-                                      <span class="m-txt">:</span>
-                                      <span class="s-num">06</span><span class="s-txt">
-
-                                  </span>
-                                  <span class="desc-txt-behind">
-
-                                  </span>
-                                  </div>
-                              </div>
-                          </div>
-
-                      </div>
-
-                  </div>
-
-
-              </div>
-
-          </div>
+            <span class="arrowright">
+            <!--<img src="src/images/lrarrow.png" alt="">-->
+            </span>
 
 
 
+
+
+        <div class="row">
+
+            <!--一-->
+        <div class="col-md-3 rowfour0002r10ins fourfirst ">
+
+            <div class="row">
+                <!--左四-->
+                <div class="col-md-4">
+                    <div class="left4pic">
+                        <img  src="src/images/phone0102.jpg" alt="">
+                    </div>
+
+                </div>
+                <!--右八-->
+                <div class="col-md-8">
+
+                    <div class="right8txt">
+                        <h4 class="tit">戴尔 INS 3568</h4>
+                        <p class="intro">官方翻新  黑色</p>
+
+                        <!--做空格用-->
+                        <!--<div class="p-price-orig">-->
+                        <!--</div>-->
+                        <!---->
+                        <del class="priceredtop">￥1798</del>
+                        <div class="pricered">￥<span class="numred">2899</span></div>
+
+                        <!--鼠标扫过显示-->
+                        <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
+
+                        <!--秒杀-->
+                        <div class="seckill">秒杀</div>
+                        <!--倒计时-->
+                        <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
+                            <span class="desc-txt desc-txt-before"> </span>
+                            <span class="d-num">0</span>
+                            <span class="d-txt">天 </span>
+                            <span class="h-num">84</span>
+                            <span class="h-txt">:</span>
+                            <span class="m-num">23</span>
+                            <span class="m-txt">:</span>
+                            <span class="s-num">06</span><span class="s-txt">
+
+            </span>
+            <span class="desc-txt-behind">
+
+            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            </div>
+            <!--二-->
+            <div class="col-md-3 rowfour0002r10ins fourfirst ">
+
+                <div class="row">
+                    <!--左四-->
+                    <div class="col-md-4">
+                        <div class="left4pic">
+                            <img  src="src/images/phone0102.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <!--右八-->
+                    <div class="col-md-8">
+
+                        <div class="right8txt">
+                            <h4 class="tit">戴尔 INS 3568</h4>
+                            <p class="intro">官方翻新  黑色</p>
+
+                            <!--做空格用-->
+                            <!--<div class="p-price-orig">-->
+                            <!--</div>-->
+                            <!---->
+                            <del class="priceredtop">￥1798</del>
+                            <div class="pricered">￥<span class="numred">2899</span></div>
+
+                            <!--鼠标扫过显示-->
+                            <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
+
+                            <!--秒杀-->
+                            <div class="seckill">秒杀</div>
+                            <!--倒计时-->
+                            <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
+                                <span class="desc-txt desc-txt-before"> </span>
+                                <span class="d-num">0</span>
+                                <span class="d-txt">天 </span>
+                                <span class="h-num">84</span>
+                                <span class="h-txt">:</span>
+                                <span class="m-num">23</span>
+                                <span class="m-txt">:</span>
+                                <span class="s-num">06</span><span class="s-txt">
+
+            </span>
+            <span class="desc-txt-behind">
+
+            </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--第三个-->
+            <div class="col-md-3 rowfour0002r10ins fourfirst ">
+
+                <div class="row">
+                    <!--左四-->
+                    <div class="col-md-4">
+                        <div class="left4pic">
+                            <img  src="src/images/phone0102.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <!--右八-->
+                    <div class="col-md-8">
+
+                        <div class="right8txt">
+                            <h4 class="tit">戴尔 INS 3568</h4>
+                            <p class="intro">官方翻新  黑色</p>
+
+                            <!--做空格用-->
+                            <!--<div class="p-price-orig">-->
+                            <!--</div>-->
+                            <!---->
+                            <del class="priceredtop">￥1798</del>
+                            <div class="pricered">￥<span class="numred">2899</span></div>
+
+                            <!--鼠标扫过显示-->
+                            <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
+
+                            <!--秒杀-->
+                            <div class="seckill">秒杀</div>
+                            <!--倒计时-->
+                            <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
+                                <span class="desc-txt desc-txt-before"> </span>
+                                <span class="d-num">0</span>
+                                <span class="d-txt">天 </span>
+                                <span class="h-num">84</span>
+                                <span class="h-txt">:</span>
+                                <span class="m-num">23</span>
+                                <span class="m-txt">:</span>
+                                <span class="s-num">06</span><span class="s-txt">
+
+            </span>
+            <span class="desc-txt-behind">
+
+            </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--第四个-->
+            <div class="col-md-3 rowfour0002r10ins fourfirst ">
+
+                <div class="row">
+                    <!--左四-->
+                    <div class="col-md-4">
+                        <div class="left4pic">
+                            <img  src="src/images/phone0102.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <!--右八-->
+                    <div class="col-md-8">
+
+                        <div class="right8txt">
+                            <h4 class="tit">戴尔 INS 3568</h4>
+                            <p class="intro">官方翻新  黑色</p>
+
+                            <!--做空格用-->
+                            <!--<div class="p-price-orig">-->
+                            <!--</div>-->
+                            <!---->
+                            <del class="priceredtop">￥1798</del>
+                            <div class="pricered">￥<span class="numred">2899</span></div>
+
+                            <!--鼠标扫过显示-->
+                            <!--<a href="/liangpin/product?product_id=2072692702294016&amp;from=index" class="p-buy" target="_blank">立即抢购</a>-->
+
+                            <!--秒杀-->
+                            <div class="seckill">秒杀</div>
+                            <!--倒计时-->
+                            <div class="seckilltime" data-descbefore=" " data-hour-mode="1">
+                                <span class="desc-txt desc-txt-before"> </span>
+                                <span class="d-num">0</span>
+                                <span class="d-txt">天 </span>
+                                <span class="h-num">84</span>
+                                <span class="h-txt">:</span>
+                                <span class="m-num">23</span>
+                                <span class="m-txt">:</span>
+                                <span class="s-num">06</span><span class="s-txt">
+
+            </span>
+            <span class="desc-txt-behind">
+
+            </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--&lt;!&ndash;第二个&ndash;&gt;-->
+        <!--<div class="col-md-3 rowfour0002r10ins"></div>-->
+        <!--&lt;!&ndash;第三个&ndash;&gt;-->
+        <!--<div class="col-md-3 rowfour0002r10ins"></div>-->
+        <!--&lt;!&ndash;第四个&ndash;&gt;-->
+        <!--<div class="col-md-3 rowfour0002r10ins"></div>-->
+        </div>
+
+
+
+
+    </div>
 
 </div>
-      </div>
-  </div>
-  </div>
+
+
+
+
+
+
+
 
       <!--最新上架-->
       <div class="container-fluid">
@@ -697,11 +697,7 @@
 
         <!--右边五个，每个占两格-->
         <div class="rrrr">
-            <div class="col-md-2  bgc0002r2 br10">
-
-
-
-            </div>
+            <div class="col-md-2  bgc0002r2 br10"></div>
             <div class="col-md-2  bgc0002r2 br10 bl5">
 
                 <!--bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite-->
@@ -798,37 +794,7 @@
                 <!--</a>-->
 
             </div>
-            <div class="col-md-2  bgc0002r2 bl5">
-
-                <!--bgc000201 br10 rowdivwhbgc pic h p   price   rmblogo   nowcost   disori   discount  original  lastwrite-->
-
-                <!--<a href="" target="_blank">-->
-                <!--<div class="pic">-->
-                <!--<img  src="src/phones/phones001.jpg" alt="三星 【J7】 移动 4G/3G/2G 白色 16 G 国行 9成新 ">-->
-                <!--</div>-->
-
-                <!--<h6 class="h">三星 J7</h6>-->
-
-                <!--<p class="p">9成新 16 G 白色</p>-->
-
-                <!--<div class="price">-->
-                <!--<div class="rmblogo">￥<span class="nowcost">650</span>-->
-                <!--</div>-->
-
-                <!--<div class="disori">-->
-                <!--<span class="discount">3.6折</span>-->
-
-                <!--<del class="original">￥1798</del>-->
-                <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="lastwrite">-->
-                <!--真机实拍，保修180天-->
-                <!--</div>-->
-
-                <!--</a>-->
-
-            </div>
+            <div class="col-md-2  bgc0002r2 bl5"></div>
 
         </div>
 

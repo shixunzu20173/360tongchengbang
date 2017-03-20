@@ -60,6 +60,44 @@ $(function() {
 
 
 
+// 一排四个
+    $.ajax({
+        url:'http://localhost:1010/rowfour',
+//        跨域
+        dateType:'jsonp',
+//        dateType:'json',
+
+        method:'get',
+        success:function (data) {
+//            console.log(JSON.parse(data));
+
+            var json=JSON.parse(data);
+
+            var str=''
+
+            var rfr=json.rowfour;
+            for(var i=0;i<rfr.length;i++){
+
+
+             str+= ' <div class="row"><div class="col-md-3 rowfour0002r10ins fourfirst "> <div class="row">'+
+                    <!--左四-->
+                    '<div class="col-md-4"> <div class="left4pic">'+
+                    '<img  src="'+rfr[i].thum_img.old+'" alt=""> </div> </div>'+
+                    <!--右八-->
+                    '<div class="col-md-8"> <div class="right8txt">'+
+                    '<h4 class="tit">'+rfr[i].title+'</h4>'+
+                '<p class="intro">'+rfr[i].subhead+'</p>'+
+
+                    '<del class="priceredtop">￥'+rfr[i].com_price+'</del>'+
+                    '<div class="pricered">￥<span class="numred">'+rfr[i].flash_price+'</span></div></div>'
+
+
+
+            }
+            $('.ffff').html(str);
+        }
+
+    })
 
 
 
@@ -69,9 +107,7 @@ $(function() {
 
 
 
-
-
-// 一排五个 第一排
+// 一排五个 
     $.ajax({
         url:'http://localhost:3214/phones',
 //        跨域

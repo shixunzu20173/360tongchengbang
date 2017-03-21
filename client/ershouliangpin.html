@@ -11,11 +11,10 @@
       <link rel="stylesheet" href="dist/pagination.css">
 
   </head>
-
-
-
-
   <style type="text/css">
+
+
+
 
       .rowpage{
           height:100px;
@@ -66,26 +65,27 @@
       }
 
   .footer-icon0{
-      /*width: 68px;*/
-      /*height: 68px;*/
       background: url("src/hezuohuoban/footer001.png") no-repeat;
       background-position:0 0 ;
-
-
-      /*display:inline-block;width: 68px; height: 68px;*/
-
   }
       .footer-icon2{
-
           background: url("src/hezuohuoban/footer001.png") no-repeat;
           background-position:-140px 0;
+      }
+      .footer-icon1{
+          background: url("src/hezuohuoban/footer001.png") no-repeat;
+          background-position: -71px 0;
+
+      }
+
+      .footer-icon3{
+          display:inline-block;width: 68px; height: 68px;
+          background: url("src/hezuohuoban/footer001.png") no-repeat;
+          background-position:-211px 0;
 
 
 
       }
-
-
-
 
     .w100b{
       width: 100%;
@@ -95,10 +95,69 @@
     }
 
 
+
+.cecece{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -140px;
+    z-index: 999;
+}
+          .fixed01 {
+
+          width: 75px;
+          height: 53px;
+          background: url(" src/images/centercentercenter.png") no-repeat -75px 0;
+          }
+
+      .fixed03{
+      width: 75px;
+      height: 120px;
+      background: url(" src/images/centercentercenter.png") no-repeat -75px -75px;
+
+      }
+
+      .fixed02{
+      display: inline-block;
+      width: 75px;
+      height: 22px;
+      background: url(" src/images/centercentercenter.png") no-repeat -75px -53px;
+z-index:999;
+      /*background: red;*/
+      }
+
+      .fixed02:hover{
+      /*background: red;*/
+      width: 75px;
+      height: 22px;
+      background: url(" src/images/centercentercenter.png") no-repeat 0 -53px;
+z-index: 999;
+
+
+      /*transform:scale(1.02);*/
+      /*box-shadow:0px 1px 30px 2px #C0C0C0;*/
+      /*z-index:5;*/
+
+      }
+
+
+
   </style>
-
-
   <body>
+
+<!--固定在屏幕右中的图片-->
+
+
+  <div class="cecece">
+      <div class="fixed01"></div>
+      <a href="">
+      <div class="fixed02">
+
+      </div></a>
+      <div class="fixed03"></div>
+  </div>
+
+
 
   <!--navtop 顶部-->
   <div class="container-fluid">
@@ -356,8 +415,8 @@
 
 
 <!--轮播-->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+            <div class="swiper-container swiper-row">
+                <div class="swiper-wrapper swiper-wrapper-row">
 
                     <div class="swiper-slide">
                         <img src="src/bannerimg/banner001.png" alt="">
@@ -388,17 +447,15 @@
 
           </div>
       </div>
-
   <!--横排四个-->
 <!--最外边 占满宽-->
-
 <div class="container-fluid rowfour0001">
 <div class="row rowfour0002">
 
     <!--左一份-->
     <div class="col-md-1 rowfour0002l1"></div>
     <!--右十份-->
-    <div class="col-md-10 rowfour0002r10 ">
+    <div class="col-md-10 rowfour0002r10 " >
         <!--左右箭头，绝对定位-->
             <span class="arrowleft">
             <!--<img src="src/images/lrarrow.png" alt="">-->
@@ -415,10 +472,16 @@
 
 <!--将此分为四块-->
 
-<div class="row ">
-    <div id="rowfourhtml">
+<div class="row " >
+
+
+    <div id="rowfourhtml" >
+
+
+
 
     </div>
+
 
             <!--&lt;!&ndash;一&ndash;&gt;-->
         <!--<div class="col-md-3 rowfour0002r10ins fourfirst ">-->
@@ -653,14 +716,11 @@
     </div>
 
 </div>
-
-
-
       <!--最新上架-->
       <div class="container-fluid">
         <div class="row">
 
-      <div class=" col-lg-10 col-lg-offset-1" style="background:red; height: 56px;">
+      <div class=" col-lg-10 col-lg-offset-1" style=" height: 56px;">
 
         <div class="row">
       <nav class="navbar navbar-default col-lg-12" role="navigation" style="background:#f5f5f5; border: none; height:56px;">
@@ -681,7 +741,6 @@
       </div>
         </div>
       </div>
-
 <!--横排五个-->
       <!--第一排-->
 <div class="container-fluid bgc0001">
@@ -793,8 +852,6 @@
         </div>
     </div>
 </div>
-
-
 <!--翻页-->
 <div class="container-fluid " >
     <div class="row">
@@ -815,7 +872,6 @@
         </div>
         </div>
     </div>
-
       <!--翻页-->
       <!--<div class="container-fluid " >-->
           <!--<div class="row">-->
@@ -834,17 +890,9 @@
           <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">10</a></li>-->
           <!--<li style="display:inline-block;height: 40px; margin-right: 4px"><a href="#">下一页&raquo;</a></li>-->
           <!--</ul>-->
-
-
-
-          <!--</div>-->
-
           <!--</div>-->
           <!--</div>-->
-
-
-
-
+          <!--</div>-->
       <!--热销机型-->
       <div class="container-fluid">
           <div class="row">
@@ -853,7 +901,6 @@
         </div>
         </div>
       </div>
-
       <!--热销机型下 横排五个-->
 <div class="container-fluid hot0001">
     <div class="row hot0002" >
@@ -965,9 +1012,6 @@
     </div>
 
 </div>
-
-
-
       <!--品牌专区-->
       <div class="container-fluid">
           <div class="row">
@@ -976,10 +1020,7 @@
         </div>
         </div>
       </div>
-
-
 <!--GOGO-->
-
       <div class="container-fluid row">
       <div class="col-lg-10 col-lg-offset-1" style=" padding: 0; font-family: '微软雅黑'">
       <!--GO one-->
@@ -989,20 +1030,27 @@
       <div class="col-lg-12 col-md-12 paddingleft5 paddingright5" >
 
 
-      <div class="col-lg-3 col-md-3 " style="padding: 0;">
+      <div class="col-lg-3 col-md-3 " style="padding: 0;"><a href="">
       <img style="width: 100%;"src="src/brandimg/brand001.jpg" alt="">
+      </a>
       </div>
 
       <div class="col-lg-3 col-md-3"  style="padding: 0;">
+          <a href="">
       <img style="width: 100%"src="src/brandimg/brand002.jpg" alt="">
+          </a>
       </div>
 
       <div class="col-lg-3 col-md-3"  style="padding: 0;">
+          <a href="">
       <img style="width: 100%"src="src/brandimg/brand03.jpg" alt="">
+          </a>
       </div>
 
       <div class="col-lg-3 col-md-3"  style="padding: 0;">
+          <a href="">
       <img style="width: 100%"src="src/brandimg/brand004.jpg" alt="">
+          </a>
       </div>
 
       </div>
@@ -1019,19 +1067,27 @@
 
 
             <div class="col-lg-3 col-md-3 " style="padding: 0;">
+                <a href="">
               <img style="width: 100%;"src="src/brandimg/brand005.jpg" alt="">
+                </a>
             </div>
 
             <div class="col-lg-3 col-md-3"  style="padding: 0;">
+                <a href="">
               <img style="width: 100%"src="src/brandimg/brand006.jpg" alt="">
+                </a>
             </div>
 
             <div class="col-lg-3 col-md-3"  style="padding: 0;">
+                <a href="">
               <img style="width: 100%"src="src/brandimg/brand007.jpg" alt="">
+                </a>
             </div>
 
             <div class="col-lg-3 col-md-3"  style="padding: 0;">
+                <a href="">
               <img style="width: 100%"src="src/brandimg/brand008.jpg" alt="">
+                </a>
             </div>
 
           </div>
@@ -1054,7 +1110,6 @@
 
 
     </div >
-
       <!--用户晒单-->
       <div class="container-fluid">
           <div class="row">
@@ -1073,13 +1128,23 @@
 <!--用户晒单下-->
 <div class="container-fluid" >
     <div class="row" >
-
         <div class="col-lg-10 col-md-offset-1 downusershow" >
-
             <div class="row">
-
                 <!--用户晒单-->
                 <div class="col-md-4 downusershow001 usershowtry" >
+
+
+
+                    <div class="swiper-container swiper-container-v">
+
+                        <div class="swiper-wrapper ">
+
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination-v" style=" display: none;"></div>
+                    </div>
+
 
                     <!--usershowtry 从json获取数据-->
 
@@ -1264,9 +1329,6 @@
 
 
 </div>
-
-
-
 <!--合作伙伴-->
   <div class="container-fluid">
       <div class="row">
@@ -1287,22 +1349,34 @@
 
                 <!--pad0 padding:0;-->
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he001.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he002.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he003.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he004.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he005.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he006.jpg" alt=""  >
+                  </a>
               </div>
 
 
@@ -1319,22 +1393,34 @@
 
 
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he007.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he008.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
+                  <a href="">
                   <img  src="src/hezuohuoban/he009.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv">
+                  <a href="">
                   <img  src="src/hezuohuoban/he0010.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv" >
-                  <img  src="src/hezuohuoban/he0010.jpg" alt="" >
+                  <a href="">
+                  <img  src="src/hezuohuoban/he0011.jpg" alt="" >
+                  </a>
               </div>
               <div class="col-md-2 br5 pad0 partnersdiv">
+                  <a href="">
                   <img  src="src/hezuohuoban/he0012.jpg" alt="" >
+                  </a>
               </div>
 
 
@@ -1358,32 +1444,45 @@
                <div class="col-md-9 insideleft"  >
 
                    <div class="row">
+
+
+
+
                        <!--钻石-->
                        <div class="col-md-3 oneone" >
-
-                           <span class="footer-icon0" style=" display:inline-block;width: 68px; height: 68px; "></span>
+                           <a href="">
+                           <span class="footer-icon0" ></span>
                            <h3 >原装品质</h3>
                            <p >原装手机，不修不翻</p>
+                           </a>
                        </div>
+
+
+
                        <!--相机-->
                        <div class="col-md-3 twotwo" >
-
-                           <span class="footer-icon1" ></span>
+                           <a href="">
+                           <span class="footer-icon1"></span>
                            <h3 class="footer-tit">真机实拍</h3>
                            <p class="footer-desc">一机一拍，所见所得</p>
+                           </a>
                        </div>
 
                        <!--质检-->
                        <div class="col-md-3 threethree" >
+                           <a href="">
                            <span class="footer-icon2" style=" display:inline-block;width: 68px; height: 68px; "></span>
                            <h3 class="footer-tit">专业质检</h3>
                            <p class="footer-desc">39项外观及功能检测</p>
+                           </a>
                        </div>
                        <!--质保-->
                        <div class="col-md-3 fourfour" >
+                           <a href="">
                            <span class="footer-icon3" style="display:inline-block;width: 68px; height: 68px;"></span>
                            <h3 class="footer-tit">180天质保</h3>
                            <p class="footer-desc">7天退/换，整机180天保修</p>
+                           </a>
                        </div>
 
                    </div>
@@ -1394,7 +1493,7 @@
 
                        <div class="phone-num">4000-399-360</div>
                        <div class="phone-desc">周一至周五 10:00-19:00</div>
-                       <span class="zixun">在线咨询</span>
+                       <span class="zixun"><a href="">在线咨询</a></span>
                        <div class="follow-wechat">或关注微信公众号：bangtc 在线咨询</div>
 
 
@@ -1426,28 +1525,7 @@
     </div>
     </div>
   </div>
-
   </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="lib/jquery-3.1.1.js"></script>

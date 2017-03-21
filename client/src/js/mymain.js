@@ -11,8 +11,8 @@ $(function() {
 
 
     //轮播图
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
+    var swiperH = new Swiper('.swiper-row', {
+        pagination: '.swiper-pagination-row',
         autoplay: 1000,
         //autoplayDisableOnInteraction:false,
         centeredSlides: true,
@@ -22,7 +22,14 @@ $(function() {
     });
     //setInterval("swiper.slidePrev()", 1000);
 
-
+    var swiperV = new Swiper('.swiper-container-v', {
+        pagination: '.swiper-pagination-v',
+        paginationClickable: true,
+        direction: 'vertical',
+        // loop 循环
+        loop: true,
+        autoplay: 1000,
+    });
 
    
 
@@ -70,19 +77,15 @@ $(function() {
 //        跨域
 //        dateType:'jsonp',
         dateType:'json',
-
         method:'get',
         success:function (data) {
 //            console.log(JSON.parse(data));
-
             var json=JSON.parse(data);
-
             var str=''
-
             var rfr=json.rowfour.flash_list;
             for(var i=0;i<rfr.length;i++){
 
-                str+='<div class="col-md-3 rowfour0002r10ins fourfirst "> <div class="row">'+
+                str+='<div class="col-md-3 rowfour0002r10ins fourfirst "><div class="redcase"  >立即抢购</div><div class="row">'+
                     <!--左四-->
                     '<div class="col-md-4"> <div class="left4pic">'+
                     '<img  src="'+rfr[i].thum_img.old+'" alt=""> </div> </div>'+

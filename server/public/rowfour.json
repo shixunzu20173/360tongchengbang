@@ -1,0 +1,75 @@
+{
+  "rowfour": {
+    "flash_list": [
+      {
+        "product_id": "27976",
+        "product_name": "真机实拍 保修半年",
+        "flash_status": "saling",
+        "flash_saling": 1,
+        "price": 3699,
+        "flash_price": 3599,
+        "com_price": "6088",
+        "discount": 5.9,
+        "title": "苹果 iPhone 6S",
+        "subhead": "95成新 64 G 灰色",
+        "flash_start_time": "2017-03-15 00:00:00",
+        "flash_end_time": "2017-03-21 23:59:59",
+        "thum_img": {
+          "old": "http://p0.qhmsg.com/t01bb82ced2a1049d0d.png"
+        }
+      },
+      {
+        "product_id": "26870",
+        "product_name": "真机实拍 保修半年",
+        "flash_status": "saling",
+        "flash_saling": 1,
+        "price": 3650,
+        "flash_price": 3498,
+        "com_price": "6088",
+        "discount": 5.7,
+        "title": "苹果 iPhone 6S",
+        "subhead": "95成新 64 G 玫瑰金",
+        "flash_start_time": "2017-03-15 00:00:00",
+        "flash_end_time": "2017-03-21 23:59:59",
+        "thum_img": {
+          "old": "http://p0.qhmsg.com/t01ac7e90dc7b722260.jpg"
+        }
+      },
+      {
+        "product_id": "2096505021127680",
+        "product_name": "真机实拍 保修半年",
+        "flash_status": "saling",
+        "flash_saling": 1,
+        "price": 5699,
+        "flash_price": 5558,
+        "com_price": "",
+        "discount": 0,
+        "title": "苹果 ME865",
+        "subhead": "9成新 8G/256G SSD 白色",
+        "flash_start_time": "2017-03-19 00:00:00",
+        "flash_end_time": "2017-03-21 00:00:00",
+        "thum_img": {
+          "old": "http://p0.qhmsg.com/t012948706d125c9224.jpg"
+        }
+      },
+      {
+        "product_id": "27058",
+        "product_name": "爆品特惠，保修半年",
+        "flash_status": "saling",
+        "flash_saling": 1,
+        "price": 3399,
+        "flash_price": 3288,
+        "com_price": "6888",
+        "discount": 4.8,
+        "title": "苹果 iPhone 6S Plus",
+        "subhead": "95成新 16 G 粉色",
+        "flash_start_time": "2017-03-20 00:00:00",
+        "flash_end_time": "2017-03-22 00:00:00",
+        "thum_img": {
+          "old": "http://p0.qhmsg.com/t01986aefac2d533e24.png"
+        }
+      }
+    ]
+
+  }
+}

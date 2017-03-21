@@ -24,6 +24,10 @@ $(function() {
 
 
 
+   
+
+
+
 
 
 
@@ -100,7 +104,11 @@ $(function() {
 
     $(function(){
         function getdata(page_index,page_size){
-            $.post('http://localhost:3002/getlist',
+            $.post(
+                //pages.js
+                // 'http://localhost:3002/getlist',
+                //server.js
+                'http://localhost:8030/getlist',
                 {page_index:page_index,page_size:page_size},
                 function(res){
                     console.log(res);
@@ -125,7 +133,11 @@ $(function() {
                 })
         }
 
-        $.get('http://localhost:3002/gettotal',function(res){
+        $.get(
+            // 'http://localhost:3002/gettotal',
+            'http://localhost:8030/gettotal',
+
+            function(res){
             var total = res.length;
             // console.log(total)
             initPagination(total);
@@ -135,8 +147,8 @@ $(function() {
             // 创建分页
             console.log("total:" + total)
             $("#Pagination").pagination(10, {
-                num_edge_entries: 2, //边缘页数
-                num_display_entries: 6, //主体页数
+                num_edge_entries: 0, //边缘页数
+                num_display_entries: 10, //主体页数
                 items_per_page:1,
                 callback: pageselectCallback,
                 prev_text: "上一页",

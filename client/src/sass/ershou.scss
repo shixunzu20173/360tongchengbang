@@ -385,6 +385,12 @@ position: relative;
 
 
 }
+.paddingleft5{
+  padding-left: 5px;
+}
+.paddingright5{
+  padding-right: 5px;
+}
 
 //横排四个
 
@@ -643,15 +649,12 @@ position: relative;
 
 
 
-//横排四个 之前的
+//横排四个
 .rowfour0001{
-
-
   position: relative;
     height:146px;
   //  background:gold;
   //  padding: 0;
-
 
   .rowfour0002{
     //height: 80px;
@@ -732,6 +735,8 @@ position: relative;
 
         }
       }
+
+
 
       .foursecond{
         border-right: 1px solid #f5f5f5;
@@ -917,31 +922,6 @@ position: relative;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pad0{
   padding: 0;
 }
@@ -968,21 +948,18 @@ position: relative;
   //margin-bottom: 500px;
   //margin-left: 135px;
   .bgc0002{
-
     height: 202px;
-
-
 //左边一份
     .bgc0002l1{
       background: red;
       height: 1000px;
     }
-
     //.bgc0002r2{
     //  background: gold;
     //  height: 40px;
     //}
 
+    //右边五个，每个的div
     .rowdivwhbgc{
       height:302px; background:white;
       text-align: center;
@@ -1078,6 +1055,17 @@ position: relative;
 }
 
 
+//翻页
+.pagescontrol{
+
+
+  text-align:center;
+  height:40px;
+  padding: 0;
+  //background: red;
+}
+
+
 
 //热销机型
 .hot0001{
@@ -1085,14 +1073,11 @@ position: relative;
   height: 302px;
   //margin-bottom: 10px;
 
-
   //margin-bottom: 500px;
   //margin-left: 135px;
   .hot0002{
 
     height: 202px;
-
-
 
     .hot0002l1{
       background: red;
@@ -1140,6 +1125,11 @@ position: relative;
 
 
 
+    }
+    .rowdivwhbgc:hover{
+      transform:scale(1.02);
+      box-shadow:0px 1px 30px 2px #C0C0C0;
+      z-index:5;
     }
 
 
@@ -1301,10 +1291,8 @@ position: relative;
 
 //用户晒单下
 .downusershow{
-
   height:334px;
   //background: pink;
-
   //用户晒单
   .downusershow001{
     background: white;
@@ -1313,6 +1301,9 @@ position: relative;
     .outline{
       height: 111px;
       border-bottom: 1px dashed black;
+
+
+
 
       .s1{
         height: 50px;
@@ -1340,6 +1331,14 @@ margin-top: 20px;
 
         }
       }
+    }
+
+
+
+    .outline:hover{
+      transform:scale(1.02);
+      box-shadow:0px 1px 30px 2px #C0C0C0;
+      z-index:5;
     }
 
 
@@ -1519,9 +1518,6 @@ margin-top: 20px;
 
 }
 
-
-
-
 .footer001{
    height: 206px; background: white;
 
@@ -1557,10 +1553,16 @@ margin-top: 20px;
           text-align:center;
 
           .footer-icon1{
+            display: block;
+            width: 68px;
+            height: 68px;
+
+            background: red;
 
             background: url("../hezuohuoban/footer001.png") no-repeat;
             background-position: -71px 0;
-            display:inline-block;width: 68px; height: 68px;
+
+            z-index: 999;
 
           }
 
@@ -1580,7 +1582,8 @@ margin-top: 20px;
         }
 
         .fourfour{
-          border-right:2px solid grey;text-align:center;
+          border-right:2px solid grey;
+          text-align:center;
 
           .footer-icon3{
             display:inline-block;width: 68px; height: 68px;
@@ -1595,11 +1598,6 @@ margin-top: 20px;
     }
 }
 }
-
-
-
-
-
 
 .footer{
   color:white; font-family: 微软雅黑;

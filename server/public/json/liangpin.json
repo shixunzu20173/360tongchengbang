@@ -1,0 +1,89 @@
+{
+  "liangpin": [
+    {
+      "product_id": "2102376342589440",
+      "model_name": "mate 9 Pro",
+      "brand_id": "4",
+      "brand_name": "华为",
+      "price": 5299,
+      "com_price": "6999",
+      "model_id": "812",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t015eca183bde303100.jpg",
+        "big": "http://p0.qhmsg.com/t01b07d156f5b153ed8.jpg",
+        "mid": "http://p0.qhmsg.com/t011e74680d343deabf.jpg",
+        "min": "http://p0.qhmsg.com/t012ab8a76f5b36ab87.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "2102313467678720",
+      "model_name": "R7",
+      "brand_id": "22",
+      "brand_name": "oppo",
+      "price": 799,
+      "com_price": "1999",
+      "model_id": "203",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t01e5c40a3390a1fa49.jpg",
+        "big": "http://p0.qhmsg.com/t012d576071af53f961.jpg",
+        "mid": "http://p0.qhmsg.com/t01204a8cabdacaab1b.jpg",
+        "min": "http://p0.qhmsg.com/t01014e104dd3286ebc.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "2102329011822592",
+      "model_name": "iPhone 6",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 2299,
+      "com_price": "5288",
+      "model_id": "97",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t018fa3c0b018484d37.jpg",
+        "big": "http://p0.qhmsg.com/t016bcb767968641acf.jpg",
+        "mid": "http://p0.qhmsg.com/t012704be3da0a7a6bb.jpg",
+        "min": "http://p0.qhmsg.com/t01cdc72ff79ca8f8b2.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "2102338814337024",
+      "model_name": "iPhone 6S",
+      "brand_id": "2",
+      "brand_name": "苹果",
+      "price": 3599,
+      "com_price": "6088",
+      "model_id": "261",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t0147cf39951f21db81.jpg",
+        "big": "http://p0.qhmsg.com/t018deb6d1cb6b189eb.jpg",
+        "mid": "http://p0.qhmsg.com/t0166dc8c420e6b28a0.jpg",
+        "min": "http://p0.qhmsg.com/t017b00c81cf0c75135.jpg"
+      },
+      "mer_name": ""
+    },
+    {
+      "product_id": "2102339316388864",
+      "model_name": "R7",
+      "brand_id": "22",
+      "brand_name": "oppo",
+      "price": 699,
+      "com_price": "1999",
+      "model_id": "203",
+      "mer_id": "8",
+      "thum_img": {
+        "old": "http://p0.qhmsg.com/t014e0c394c437d7f91.jpg",
+        "big": "http://p0.qhmsg.com/t01f471ab666f512a4d.jpg",
+        "mid": "http://p0.qhmsg.com/t017f8a78643e3f95d4.jpg",
+        "min": "http://p0.qhmsg.com/t0151915091cd4b094f.jpg"
+      },
+      "mer_name": ""
+    }
+  ]
+}

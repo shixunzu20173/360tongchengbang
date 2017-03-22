@@ -1,5 +1,7 @@
 {
-  "huishou": [
+  "errno": 0,
+  "errmsg": "OK",
+  "result": [
     {
       "model_id": 1,
       "brand_id": 10,
@@ -31,5 +33,4 @@
       "img_url": "https://p.ssl.qhmsg.com/t0127e99c045a53e82e.jpg"
     }
   ]
-
 }

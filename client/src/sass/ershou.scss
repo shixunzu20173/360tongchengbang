@@ -88,6 +88,9 @@ body{
     color: #c2c2c2;
     height: 34px;
 
+    a{
+      text-decoration: none;
+    }
     //background: yellow;
     span{
       display: inline-block;
@@ -114,6 +117,10 @@ body{
     padding-left: 100px;
     //background: red;
     height: 34px;
+
+    a{
+      text-decoration: none;
+    }
 
     span{
       display: inline-block;
@@ -167,6 +174,10 @@ body{
       //background: green;
 
       //padding-left: 40px;
+
+      a{
+        text-decoration: none;
+      }
 
       span{
         display: inline-block;
@@ -695,11 +706,9 @@ position: relative;
     height:146px;
   //  background:gold;
   //  padding: 0;
-
   .rowfour0002{
     //height: 80px;
     //background: pink;
-
     .rowfour0002l1{
       //height: 70px;
       //background: green;
@@ -730,7 +739,6 @@ position: relative;
        //background: yellow;
 
         //border-right: 1px solid black;
-
 
           }
 
